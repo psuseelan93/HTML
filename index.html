@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Suseelan P — Data Engineer / MSBI Lead</title>
 <style>
 :root{
@@ -20,63 +20,57 @@ body{
   background:var(--bg);
   color:var(--text);
   overflow-x:hidden;
-  scroll-behavior:smooth;
   line-height:1.6;
-}
-nav{
-  position:fixed;
-  top:0;left:0;width:100%;
-  background:rgba(22,27,34,0.9);
-  backdrop-filter:blur(10px);
-  z-index:1000;
-  display:flex;justify-content:center;align-items:center;
-  border-bottom:1px solid #30363d;
-}
-nav ul{
-  list-style:none;
-  display:flex;
-  margin:0;padding:10px;
-  flex-wrap:wrap;
-}
-nav li{margin:0 12px;}
-nav a{
-  color:var(--muted);
-  text-decoration:none;
-  font-size:0.95rem;
-  padding:6px 10px;
-  border-radius:6px;
-  transition:all 0.3s ease;
-}
-nav a:hover,nav a.active{
-  color:#fff;
-  background:var(--primary);
+  scroll-behavior:smooth;
 }
 header{
   background:linear-gradient(135deg,#0d47a1,#1f6feb,#ffb703);
   background-attachment:fixed;
-  color:#fff;text-align:center;
-  padding:100px 20px 120px;margin-top:50px;position:relative;
+  color:#fff;
+  text-align:center;
+  padding:80px 20px 100px;
+  position:relative;
+}
+header::after{
+  content:"";
+  position:absolute;
+  bottom:-40px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80%;
+  height:80px;
+  border-radius:50%;
+  background:var(--bg);
+  z-index:0;
 }
 header img{
-  width:120px;height:120px;border-radius:50%;
-  border:3px solid #fff;object-fit:cover;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:3px solid #fff;
+  object-fit:cover;
   box-shadow:0 0 15px rgba(0,0,0,0.4);
 }
-header h1{margin:15px 0 5px;font-size:2rem;}
-header p{margin:5px 0;font-size:1.05rem;color:#e2e2e2;}
-.contact a{color:#fff;text-decoration:none;margin:0 6px;transition:opacity 0.3s;}
-.contact a:hover{opacity:0.8;}
-.social-icons{margin-top:12px;}
-.social-icons a{
-  color:#fff;font-size:1.2rem;margin:0 8px;transition:transform 0.3s, color 0.3s;
+header h1{
+  margin:15px 0 5px;
+  font-size:2rem;
 }
-.social-icons a:hover{transform:scale(1.2);color:var(--secondary);}
+header p{margin:5px 0;font-size:1.05rem;color:#e2e2e2;}
+.contact a{
+  color:#fff;text-decoration:none;margin:0 6px;
+  transition:opacity 0.3s ease;
+}
+.contact a:hover{opacity:0.8;}
 .container{
-  max-width:1000px;margin:auto;
+  max-width:1000px;
+  margin:auto;
   background:var(--card);
   border-radius:16px;
   box-shadow:0 0 25px rgba(0,0,0,0.4);
-  padding:30px 25px;margin-top:-50px;position:relative;
+  padding:30px 25px;
+  margin-top:-50px;
+  position:relative;
+  z-index:1;
 }
 .section-title{
   color:var(--secondary);
@@ -86,72 +80,84 @@ header p{margin:5px 0;font-size:1.05rem;color:#e2e2e2;}
   border-bottom:1px solid #30363d;
   padding-bottom:4px;
 }
+p,li{color:var(--text);}
 .chip{
-  display:inline-block;background:#1f6feb;color:#fff;
-  padding:6px 10px;border-radius:5px;margin:4px;
-  font-size:0.8rem;transition:transform 0.3s,background 0.3s;
+  display:inline-block;
+  background:#1f6feb;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:5px;
+  margin:4px;
+  font-size:0.8rem;
+  transition:transform 0.3s ease,background 0.3s ease;
 }
 .chip:hover{background:var(--secondary);color:#000;transform:scale(1.05);}
-.skillbar{background:#30363d;border-radius:6px;overflow:hidden;margin-bottom:8px;}
-.skillbar-fill{height:8px;background:var(--primary);width:0;transition:width 1.2s ease-out;}
+.skillbar{
+  background:#30363d;
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:8px;
+}
+.skillbar-fill{
+  height:8px;
+  background:var(--primary);
+  width:0;
+  transition:width 1.2s ease-out;
+}
 .job h4{margin:0;color:var(--primary);}
 .meta{font-size:0.85rem;color:var(--muted);margin-bottom:6px;}
-.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
-.project{background:#1b1f27;border-radius:10px;padding:15px;transition:transform 0.4s,box-shadow 0.4s;}
-.project:hover{transform:translateY(-5px);box-shadow:0 4px 18px rgba(0,0,0,0.6);}
-footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;}
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
+}
+.project{
+  background:#1b1f27;
+  border-radius:10px;
+  padding:15px;
+  transition:transform 0.4s ease,box-shadow 0.4s ease;
+}
+.project:hover{
+  transform:translateY(-5px);
+  box-shadow:0 4px 18px rgba(0,0,0,0.6);
+}
+footer{
+  text-align:center;
+  margin:30px 0 10px;
+  color:var(--muted);
+  font-size:0.9rem;
+}
 .fade{opacity:0;transform:translateY(20px);transition:all 0.8s ease-out;}
 .fade.visible{opacity:1;transform:none;}
 @media(max-width:768px){
-  nav a{font-size:0.85rem;padding:4px 8px;}
-  header{padding:80px 10px 100px;}
+  header{padding:60px 10px 80px;}
   header h1{font-size:1.6rem;}
   .container{padding:20px;}
-}
-@media(max-width:480px){
-  .container{padding:14px;}
-  .chip{font-size:0.75rem;padding:4px 7px;}
 }
 </style>
 </head>
 <body>
-
-<nav>
-  <ul>
-    <li><a href="#top" class="active">Home</a></li>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-  </ul>
-</nav>
 
 <header id="top">
   <img src="photo.jpg" alt="Suseelan photo">
   <h1>Suseelan P</h1>
   <p>Data Engineer / MSBI Lead Developer</p>
   <div class="contact">
-    📞 +91 97155 66562 | 
+    📞 +91&nbsp;97155&nbsp;66562 | 
     ✉️ <a href="mailto:suseelan93@gmail.com">suseelan93@gmail.com</a> | 
-    🌍 Chennai, India
-  </div>
-  <div class="social-icons">
-    <a href="https://facebook.com" target="_blank">🌐</a>
-    <a href="https://twitter.com" target="_blank">🐦</a>
-    <a href="https://instagram.com" target="_blank">📷</a>
-    <a href="https://linkedin.com" target="_blank">💼</a>
-    <a href="https://github.com" target="_blank">💻</a>
+    🌍 Chennai, India |
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a> · 
+    <a href="https://github.com" target="_blank">GitHub</a>
   </div>
 </header>
 
 <div class="container">
-  <section id="profile" class="fade">
+  <section class="fade">
     <div class="section-title">Profile</div>
-    <p>Results-oriented Data Engineer with 8+ years of experience in Microsoft Business Intelligence and Data Warehousing using SQL Server, SSIS, SSRS, Power BI and Azure. Skilled in scalable ETL framework design, query optimization, and end-to-end BI delivery. Recognized for mentoring teams and achieving top performance awards.</p>
+    <p>Results-oriented Data Engineer with 8+ years of expertise in Microsoft Business Intelligence and Data Warehousing using SQL Server, SSIS, SSRS, Power BI, and Azure. Skilled in building scalable ETL frameworks, optimizing SQL performance, and leading teams across Banking, Insurance, and Healthcare domains. Recognized for delivering high-quality solutions and mentoring peers for excellence.</p>
   </section>
 
-  <section id="skills" class="fade">
+  <section class="fade">
     <div class="section-title">Core Skills</div>
     <div>
       <span class="chip">SSIS / SSRS / Power BI</span>
@@ -164,26 +170,33 @@ footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;
       <span class="chip">Agile / Scrum</span>
       <span class="chip">Team Leadership</span>
     </div>
-
-    <div class="section-title" style="margin-top:20px;">Technical Proficiency</div>
-    <div>SQL Server</div><div class="skillbar"><div class="skillbar-fill" data-width="95%"></div></div>
-    <div>SSIS / SSRS</div><div class="skillbar"><div class="skillbar-fill" data-width="90%"></div></div>
-    <div>Azure Data Factory</div><div class="skillbar"><div class="skillbar-fill" data-width="85%"></div></div>
-    <div>Power BI</div><div class="skillbar"><div class="skillbar-fill" data-width="80%"></div></div>
-    <div>Python / Scripting</div><div class="skillbar"><div class="skillbar-fill" data-width="70%"></div></div>
   </section>
 
-  <section id="experience" class="fade">
+  <section class="fade">
+    <div class="section-title">Technical Proficiency</div>
+    <div>SQL Server</div>
+    <div class="skillbar"><div class="skillbar-fill" data-width="95%"></div></div>
+    <div>SSIS / SSRS</div>
+    <div class="skillbar"><div class="skillbar-fill" data-width="90%"></div></div>
+    <div>Azure Data Factory</div>
+    <div class="skillbar"><div class="skillbar-fill" data-width="85%"></div></div>
+    <div>Power BI</div>
+    <div class="skillbar"><div class="skillbar-fill" data-width="80%"></div></div>
+    <div>Python / Scripting</div>
+    <div class="skillbar"><div class="skillbar-fill" data-width="70%"></div></div>
+  </section>
+
+  <section class="fade">
     <div class="section-title">Professional Experience</div>
 
     <div class="job">
       <h4>Module Lead — Mindtree Pvt. Ltd.</h4>
       <div class="meta">Mar 2021 – Present · Chennai</div>
       <ul>
-        <li>Leading ETL development and deployment for <b>FCB – One Run</b> project.</li>
-        <li>Developed dynamic SSIS packages with robust configuration and error handling.</li>
+        <li>Leading ETL development and deployment for <b>FCB – One Run</b> with focus on scalability and automation.</li>
+        <li>Developed dynamic SSIS packages with robust error handling and configuration control.</li>
         <li>Directed SQL Server migration (2012 → 2019) ensuring stability and integrity.</li>
-        <li>Authored stored procedures, views, and optimized queries.</li>
+        <li>Authored stored procedures, views, and performance-tuned queries.</li>
       </ul>
     </div>
 
@@ -192,8 +205,8 @@ footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;
       <div class="meta">Mar 2019 – Mar 2021 · Chennai</div>
       <ul>
         <li>Built SSIS packages and SSRS reports for <b>ClaimSphere</b> (Healthcare).</li>
-        <li>Implemented Azure Data Factory for cloud ETL and migration tasks.</li>
-        <li>Contributed to NCQA HEDIS certification and quality control automation.</li>
+        <li>Integrated Azure Data Factory pipelines for data migration and automation.</li>
+        <li>Key contributor to NCQA HEDIS certification process and validation logic.</li>
       </ul>
     </div>
 
@@ -201,31 +214,32 @@ footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;
       <h4>MSBI Developer — IBM India Pvt. Ltd.</h4>
       <div class="meta">May 2015 – Mar 2019 · Chennai</div>
       <ul>
-        <li>Delivered ETL and reporting solutions for <b>Xerox</b> and <b>Co-Operative Insurance</b>.</li>
-        <li>Implemented SCD logic, logging, and batch automation via SQL Mail Agent.</li>
+        <li>Delivered ETL and reporting solutions for <b>Xerox</b> and <b>Co-Operative Insurance</b> projects.</li>
+        <li>Implemented SCD logic, checkpoints, transactions, and advanced logging.</li>
+        <li>Automated SQL jobs using Mail Agent, FTP, and batch scripts.</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects" class="fade">
+  <section class="fade">
     <div class="section-title">Projects</div>
     <div class="project-grid">
       <div class="project">
         <h4>Real-Time Data Pipeline</h4>
-        <p>Built Kafka–Spark Streaming pipeline for real-time analytics with Delta Lake and Power BI dashboards.</p>
+        <p>Developed Kafka–Spark Streaming pipeline for real-time analytics with < 1 min latency using Delta Lake and Power BI dashboards.</p>
       </div>
       <div class="project">
         <h4>SQL Server Migration</h4>
-        <p>Led migration from SQL Server 2012 to 2019 with enhanced indexing and validation scripts.</p>
+        <p>Led a major migration from SQL Server 2012 to 2019 with enhanced indexing strategy and automated validation scripts.</p>
       </div>
       <div class="project">
         <h4>Healthcare Reporting Platform</h4>
-        <p>Created SSRS and Power BI reports integrated with Azure SQL DB for healthcare claim analytics.</p>
+        <p>Designed SSRS and Power BI reports integrated with Azure SQL DB for claim analytics and compliance dashboards.</p>
       </div>
     </div>
   </section>
 
-  <section id="education" class="fade">
+  <section class="fade">
     <div class="section-title">Education</div>
     <p><b>Bachelor of Engineering (Electronics & Telecommunication)</b><br>
     Anna University, Chennai — <b>2014</b></p>
@@ -240,36 +254,25 @@ footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;
 // Fade-in on scroll
 const faders=document.querySelectorAll('.fade');
 const options={threshold:0.2};
-const observer=new IntersectionObserver((entries,obs)=>{
- entries.forEach(e=>{
-   if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
- });
+const appearOnScroll=new IntersectionObserver(function(entries,observer){
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
 },options);
-faders.forEach(f=>observer.observe(f));
+faders.forEach(fader=>appearOnScroll.observe(fader));
 
 // Skill bar animation
 const skillBars=document.querySelectorAll('.skillbar-fill');
 window.addEventListener('scroll',()=>{
- const trigger=window.innerHeight*0.9;
- skillBars.forEach(bar=>{
-   const top=bar.getBoundingClientRect().top;
-   if(top<trigger)bar.style.width=bar.dataset.width;
- });
-});
-
-// Highlight nav links
-const sections=document.querySelectorAll('section');
-const navLinks=document.querySelectorAll('nav a');
-window.addEventListener('scroll',()=>{
- let current="";
- sections.forEach(sec=>{
-   const secTop=sec.offsetTop-100;
-   if(scrollY>=secTop)current=sec.getAttribute('id');
- });
- navLinks.forEach(a=>{
-   a.classList.remove('active');
-   if(a.getAttribute('href')==="#"+current)a.classList.add('active');
- });
+  const triggerBottom=window.innerHeight*0.9;
+  skillBars.forEach(bar=>{
+    const barTop=bar.getBoundingClientRect().top;
+    if(barTop<triggerBottom){
+      bar.style.width=bar.dataset.width;
+    }
+  });
 });
 </script>
 </body>
