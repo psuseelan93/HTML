@@ -1,276 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Suseelan P — Data Engineer / MSBI Lead</title>
-<style>
-:root{
-  --bg:#0d1117;
-  --card:#161b22;
-  --text:#e6edf3;
-  --muted:#8b949e;
-  --primary:#00aaff;
-  --secondary:#ffb703;
-  --accent:#238636;
-  font-family:"Segoe UI",Roboto,Arial,sans-serif;
-}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
-  scroll-behavior:smooth;
-  line-height:1.6;
-}
-nav{
-  position:fixed;
-  top:0;left:0;width:100%;
-  background:rgba(22,27,34,0.9);
-  backdrop-filter:blur(10px);
-  z-index:1000;
-  display:flex;justify-content:center;align-items:center;
-  border-bottom:1px solid #30363d;
-}
-nav ul{
-  list-style:none;
-  display:flex;
-  margin:0;padding:10px;
-  flex-wrap:wrap;
-}
-nav li{margin:0 12px;}
-nav a{
-  color:var(--muted);
-  text-decoration:none;
-  font-size:0.95rem;
-  padding:6px 10px;
-  border-radius:6px;
-  transition:all 0.3s ease;
-}
-nav a:hover,nav a.active{
-  color:#fff;
-  background:var(--primary);
-}
-header{
-  background:linear-gradient(135deg,#0d47a1,#1f6feb,#ffb703);
-  background-attachment:fixed;
-  color:#fff;text-align:center;
-  padding:100px 20px 120px;margin-top:50px;position:relative;
-}
-header img{
-  width:120px;height:120px;border-radius:50%;
-  border:3px solid #fff;object-fit:cover;
-  box-shadow:0 0 15px rgba(0,0,0,0.4);
-}
-header h1{margin:15px 0 5px;font-size:2rem;}
-header p{margin:5px 0;font-size:1.05rem;color:#e2e2e2;}
-.contact a{color:#fff;text-decoration:none;margin:0 6px;transition:opacity 0.3s;}
-.contact a:hover{opacity:0.8;}
-.social-icons{margin-top:12px;}
-.social-icons a{
-  color:#fff;font-size:1.2rem;margin:0 8px;transition:transform 0.3s, color 0.3s;
-}
-.social-icons a:hover{transform:scale(1.2);color:var(--secondary);}
-.container{
-  max-width:1000px;margin:auto;
-  background:var(--card);
-  border-radius:16px;
-  box-shadow:0 0 25px rgba(0,0,0,0.4);
-  padding:30px 25px;margin-top:-50px;position:relative;
-}
-.section-title{
-  color:var(--secondary);
-  font-weight:600;
-  font-size:1.1rem;
-  margin:25px 0 10px;
-  border-bottom:1px solid #30363d;
-  padding-bottom:4px;
-}
-.chip{
-  display:inline-block;background:#1f6feb;color:#fff;
-  padding:6px 10px;border-radius:5px;margin:4px;
-  font-size:0.8rem;transition:transform 0.3s,background 0.3s;
-}
-.chip:hover{background:var(--secondary);color:#000;transform:scale(1.05);}
-.skillbar{background:#30363d;border-radius:6px;overflow:hidden;margin-bottom:8px;}
-.skillbar-fill{height:8px;background:var(--primary);width:0;transition:width 1.2s ease-out;}
-.job h4{margin:0;color:var(--primary);}
-.meta{font-size:0.85rem;color:var(--muted);margin-bottom:6px;}
-.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
-.project{background:#1b1f27;border-radius:10px;padding:15px;transition:transform 0.4s,box-shadow 0.4s;}
-.project:hover{transform:translateY(-5px);box-shadow:0 4px 18px rgba(0,0,0,0.6);}
-footer{text-align:center;margin:30px 0 10px;color:var(--muted);font-size:0.9rem;}
-.fade{opacity:0;transform:translateY(20px);transition:all 0.8s ease-out;}
-.fade.visible{opacity:1;transform:none;}
-@media(max-width:768px){
-  nav a{font-size:0.85rem;padding:4px 8px;}
-  header{padding:80px 10px 100px;}
-  header h1{font-size:1.6rem;}
-  .container{padding:20px;}
-}
-@media(max-width:480px){
-  .container{padding:14px;}
-  .chip{font-size:0.75rem;padding:4px 7px;}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suseelan P - MSBI Lead Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #FFD700;
+    }
+    header, section {
+      padding: 40px 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    h1, h2 {
+      color: #FFD700;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .socials {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .socials a {
+      color: #FFD700;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      header, section {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <nav>
-  <ul>
-    <li><a href="#top" class="active">Home</a></li>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-  </ul>
+  <a href="#summary">Summary</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<header id="top">
-  <img src="photo.jpg" alt="Suseelan photo">
+<header id="summary">
   <h1>Suseelan P</h1>
-  <p>Data Engineer / MSBI Lead Developer</p>
-  <div class="contact">
-    📞 +91 97155 66562 | 
-    ✉️ <a href="mailto:suseelan93@gmail.com">suseelan93@gmail.com</a> | 
-    🌍 Chennai, India
-  </div>
-  <div class="social-icons">
-    <a href="https://facebook.com" target="_blank">🌐</a>
-    <a href="https://twitter.com" target="_blank">🐦</a>
-    <a href="https://instagram.com" target="_blank">📷</a>
-    <a href="https://linkedin.com" target="_blank">💼</a>
-    <a href="https://github.com" target="_blank">💻</a>
+  <p>MSBI Lead Developer</p>
+  <p>📧 suseelan93@gmail.com | 📞 +91 97155 66562</p>
+  <div class="socials">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
   </div>
 </header>
 
-<div class="container">
-  <section id="profile" class="fade">
-    <div class="section-title">Profile</div>
-    <p>Results-oriented Data Engineer with 8+ years of experience in Microsoft Business Intelligence and Data Warehousing using SQL Server, SSIS, SSRS, Power BI and Azure. Skilled in scalable ETL framework design, query optimization, and end-to-end BI delivery. Recognized for mentoring teams and achieving top performance awards.</p>
-  </section>
+<section id="skills">
+  <h2>Highlights of Qualifications</h2>
+  <ul>
+    <li>8+ years in MSBI and Data Warehousing across Banking, Insurance, Healthcare domains</li>
+    <li>Expert in SSIS, SSRS, T-SQL, and SQL Server optimization</li>
+    <li>Strong experience with Power BI, Azure SQL DB, and data visualization</li>
+    <li>Skilled in SDLC, Agile, SCRUM, and managed services delivery</li>
+    <li>Recognized with A-Team, Best Team Lead, and Most Valued Talent awards</li>
+  </ul>
+</section>
 
-  <section id="skills" class="fade">
-    <div class="section-title">Core Skills</div>
-    <div>
-      <span class="chip">SSIS / SSRS / Power BI</span>
-      <span class="chip">SQL Server 2012–2019</span>
-      <span class="chip">ETL / Data Warehousing</span>
-      <span class="chip">Azure Data Factory</span>
-      <span class="chip">Performance Tuning</span>
-      <span class="chip">Stored Procedures / T-SQL</span>
-      <span class="chip">Python</span>
-      <span class="chip">Agile / Scrum</span>
-      <span class="chip">Team Leadership</span>
-    </div>
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <p><strong>Mindtree Pvt. Ltd.</strong> – Module Lead (2021–Present)</p>
+  <ul>
+    <li>Led ETL deployments, SQL migrations, and SSIS package development</li>
+    <li>Created Business Objects reports and optimized stored procedures</li>
+  </ul>
+  <p><strong>Cognizant Technology Solutions</strong> – ETL Developer (2019–2021)</p>
+  <ul>
+    <li>Developed SSRS reports and SSIS packages for healthcare clients</li>
+    <li>Used Azure Data Factory and contributed to NCQA HEDIS certification</li>
+  </ul>
+  <p><strong>IBM India Pvt. Ltd.</strong> – MSBI Developer (2015–2019)</p>
+  <ul>
+    <li>Automated batch jobs, handled package-level errors, and created SCD logic</li>
+    <li>Worked on Co-Operative Insurance and Xerox projects</li>
+  </ul>
+</section>
 
-    <div class="section-title" style="margin-top:20px;">Technical Proficiency</div>
-    <div>SQL Server</div><div class="skillbar"><div class="skillbar-fill" data-width="95%"></div></div>
-    <div>SSIS / SSRS</div><div class="skillbar"><div class="skillbar-fill" data-width="90%"></div></div>
-    <div>Azure Data Factory</div><div class="skillbar"><div class="skillbar-fill" data-width="85%"></div></div>
-    <div>Power BI</div><div class="skillbar"><div class="skillbar-fill" data-width="80%"></div></div>
-    <div>Python / Scripting</div><div class="skillbar"><div class="skillbar-fill" data-width="70%"></div></div>
-  </section>
+<section id="education">
+  <h2>Education</h2>
+  <p>Bachelor of Engineering in Electronics & Telecommunication</p>
+  <p>Anna University, Chennai – 2014</p>
+</section>
 
-  <section id="experience" class="fade">
-    <div class="section-title">Professional Experience</div>
+<section id="contact">
+  <h2>Declaration</h2>
+  <p>I do hereby declare that the above given statements are true and correct to the best of my knowledge.</p>
+  <p>— Suseelan P, Chennai</p>
+</section>
 
-    <div class="job">
-      <h4>Module Lead — Mindtree Pvt. Ltd.</h4>
-      <div class="meta">Mar 2021 – Present · Chennai</div>
-      <ul>
-        <li>Leading ETL development and deployment for <b>FCB – One Run</b> project.</li>
-        <li>Developed dynamic SSIS packages with robust configuration and error handling.</li>
-        <li>Directed SQL Server migration (2012 → 2019) ensuring stability and integrity.</li>
-        <li>Authored stored procedures, views, and optimized queries.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>ETL Developer — Cognizant Technology Solutions</h4>
-      <div class="meta">Mar 2019 – Mar 2021 · Chennai</div>
-      <ul>
-        <li>Built SSIS packages and SSRS reports for <b>ClaimSphere</b> (Healthcare).</li>
-        <li>Implemented Azure Data Factory for cloud ETL and migration tasks.</li>
-        <li>Contributed to NCQA HEDIS certification and quality control automation.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>MSBI Developer — IBM India Pvt. Ltd.</h4>
-      <div class="meta">May 2015 – Mar 2019 · Chennai</div>
-      <ul>
-        <li>Delivered ETL and reporting solutions for <b>Xerox</b> and <b>Co-Operative Insurance</b>.</li>
-        <li>Implemented SCD logic, logging, and batch automation via SQL Mail Agent.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects" class="fade">
-    <div class="section-title">Projects</div>
-    <div class="project-grid">
-      <div class="project">
-        <h4>Real-Time Data Pipeline</h4>
-        <p>Built Kafka–Spark Streaming pipeline for real-time analytics with Delta Lake and Power BI dashboards.</p>
-      </div>
-      <div class="project">
-        <h4>SQL Server Migration</h4>
-        <p>Led migration from SQL Server 2012 to 2019 with enhanced indexing and validation scripts.</p>
-      </div>
-      <div class="project">
-        <h4>Healthcare Reporting Platform</h4>
-        <p>Created SSRS and Power BI reports integrated with Azure SQL DB for healthcare claim analytics.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="fade">
-    <div class="section-title">Education</div>
-    <p><b>Bachelor of Engineering (Electronics & Telecommunication)</b><br>
-    Anna University, Chennai — <b>2014</b></p>
-  </section>
-
-  <footer>
-    © 2025 Suseelan P — Last updated Oct 2025 · References available upon request
-  </footer>
-</div>
-
-<script>
-// Fade-in on scroll
-const faders=document.querySelectorAll('.fade');
-const options={threshold:0.2};
-const observer=new IntersectionObserver((entries,obs)=>{
- entries.forEach(e=>{
-   if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
- });
-},options);
-faders.forEach(f=>observer.observe(f));
-
-// Skill bar animation
-const skillBars=document.querySelectorAll('.skillbar-fill');
-window.addEventListener('scroll',()=>{
- const trigger=window.innerHeight*0.9;
- skillBars.forEach(bar=>{
-   const top=bar.getBoundingClientRect().top;
-   if(top<trigger)bar.style.width=bar.dataset.width;
- });
-});
-
-// Highlight nav links
-const sections=document.querySelectorAll('section');
-const navLinks=document.querySelectorAll('nav a');
-window.addEventListener('scroll',()=>{
- let current="";
- sections.forEach(sec=>{
-   const secTop=sec.offsetTop-100;
-   if(scrollY>=secTop)current=sec.getAttribute('id');
- });
- navLinks.forEach(a=>{
-   a.classList.remove('active');
-   if(a.getAttribute('href')==="#"+current)a.classList.add('active');
- });
-});
-</script>
 </body>
 </html>
